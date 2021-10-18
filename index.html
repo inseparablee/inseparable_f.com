@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	 <link rel="icon" type="image/png" href="">
+	<title>inseparable friendship</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+</head>
+<body>
+	<header> 
+			  <div id="progressbar"></div>
+  <div id="scrollpath"></div>
+		<a href="#" class="brand">INFS</a>
+		<div class="menu"> 
+			<div class="btn"> 
+				<i class="fas fa-times close-btn"></i>
+			</div>
+			<a href="#">home</a>
+			<a href="#about">about us</a>
+			<a href="#member">member</a>
+			<a href="#projeck">project</a>
+			<a href="#penus">pen us</a>
+			<a href="#galery">galery</a>
+		</div>
+		<div class="btn">
+			<i class="fas fa-bars menu-btn"></i>
+		<div>
+	</header>
+	<section class="section-main"></section>
+	<section class="section-two"> 
+		<div id="about">
+		<h2>about us</h2>
+		<p>halo salam kenal,ini adalah grup persahabatan,yang di diciptakan pada tahun 2018 untuk menjalin persahabatan semenjak kita semua berpisah antara jarak dan waktu.jadi walaupun setiap orang pada jarak,waktu,dan kesibukan masing-masing tetap ingat satu sama lain.kami akan tetap bertemu di satu titik bila memiliki waktu luang.sekian terima gaji Yonde kurete arigatō</p>
+	    </div>
+		<h2 id="member">member</h2>
+		<div class="container"> 
+			
+		<div class="mycard"> 
+				<div class="cimg"> 
+					<img src="gambar/ritions2.jpg">
+				</div>
+				<div class="cdetail"> 
+					<h2>iklil ritions</h2>
+					<p>sampang</p>
+				</div>
+			</div>
+
+			<div class="mycard"> 
+				<div class="cimg"> 
+					<img src="gambar/yyan.jpg">
+				</div>
+				<div class="cdetail"> 
+					<h2>yayan</h2>
+					<p>pamekasan</p>
+				</div>
+			</div>
+
+			<div class="mycard"> 
+				<div class="cimg"> 
+					<img src="gambar/wahyu.jpg">
+				</div>
+				<div class="cdetail"> 
+					<h2>wahyu</h2>
+					<p>pamekasan</p>
+				</div>
+			</div>
+
+			<div class="mycard"> 
+				<div class="cimg"> 
+					<img src="gambar/rohil.jpg">
+				</div>
+				<div class="cdetail"> 
+					<h2>rauhil</h2>
+					<p>pamekasan</p>
+				</div>
+			</div>
+
+			<div class="mycard"> 
+				<div class="cimg"> 
+					<img src="gambar/ari.jpg">
+				</div>
+				<div class="cdetail"> 
+					<h2>arifin</h2>
+					<p>pamekasan</p>
+				</div>
+			</div>
+	
+		</div>
+<div id="projeck">	
+	<h2>project</h2>
+</div>
+	<div id="project">
+		
+		<div class="cards">
+		 <div class="card card1"> 
+		 	<div class="container2"> 
+		 		<img src="gambar/buku.jpg" alt="buku">
+		 	</div>
+		 	<div class="details">
+		 	<h3>buku</h3>
+		 	<p>"buku puisi berjudul sangkar handai taulan"</p> 
+		 	</div>
+		 </div> 
+		</div>
+	</div>
+	<div class="penus">
+		<h2 id="penus">pen us</h2>
+	<div class="kata"> 
+		<h3>ritions</h3>
+		<p>"jika kamu masuk dalam permasalahan dan tidak menemukan solusi dan jalan keluar,maka kembalilah ke jalan masuk"</p>
+	</div>
+	</div>
+	<div class="container3">
+		<div class="headers"> 
+			<h2 id="galery">galery</h2>
+		</div>
+		<div class="galery">
+			<img src="gambar/gb2.jpg">
+			<img src="gambar/gb1.jpg">
+			<img src="gambar/gb3.jpg">
+			<img src="gambar/gb4.jpg">
+			<img src="gambar/gb5.jpg">
+			<img src="gambar/buku.jpg">
+		</div>
+	</div>
+</section>
+<div> 
+	<footer> 
+		<p>©️2021 web by <a href="https://www.instagram.com/r.ritions12/?hl=id" target="_blank">ritions</a></p>
+	</footer>
+</div>
+	<script type="text/javascript"> 
+		window.addEventListener("scroll", function(){
+			var header = document.querySelector("header");
+			header.classList.toggle('sticky',window.scrollY > 0);
+
+		});
+		var menu = document.querySelector('.menu');
+		var menuBtn = document.querySelector('.menu-btn');
+		var closebtn = document.querySelector('.close-btn');
+
+		menuBtn.addEventListener("click", () => {
+			menu.classList.add('active');
+		});
+		closebtn.addEventListener("click", () => {
+			menu.classList.remove('active');
+		});
+
+		   let progress = document.getElementById('progressbar');
+   let totalHeight = document.body.scrollHeight - window.innerHeight;
+   window.onscroll = function(){
+      let progressHeight = (window.pageYOffset / totalHeight) * 100;
+      progress.style.height = progressHeight + "%";
+      }
+
+
+	</script>
+</body> 
+</html>
