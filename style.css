@@ -70,7 +70,7 @@ body{
 	position: relative;
 	width: 100%;
 	min-height: 100vh;
-	background: url(gambar/bg5.jpeg) no-repeat;
+	background: url(bg5.jpeg) no-repeat;
 	background-size: cover;
 	background-position: center;
 	display: flex;
@@ -144,7 +144,7 @@ div#about {
 }
 .section-two{
 	min-height: 100vh;
-	background: url(gambar/bg4.jpg);
+	background: url(bg4.jpg);
 	padding: 50px 0px;
 	margin-top: -10px;
 }
@@ -225,7 +225,7 @@ div#about {
 	position: relative;
 	width: 100%;
 	min-height: 80vh;
-	background: url(gambar/bg5.jpeg) no-repeat;
+	background: url(bg5.jpeg) no-repeat;
 	background-size: cover;
 	background-position: center;
 	display: flex;
